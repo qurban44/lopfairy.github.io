@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LopFairy - Zəhra'nın Əl İşləri</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Ümumi tərz */
+    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif;}
+    body {background:#87CEFA; color:white;}
+    a {text-decoration:none; color:inherit;}
+    img {max-width:100%; display:block; border-radius:10px;}
+
+    /* Header */
+    header {
+      background:#1E90FF;
+      color:white;
+      padding:30px 0;
+      text-align:center;
+    }
+    header h1 {font-size:2.8rem; margin-bottom:5px;}
+    header p {font-size:1.3rem;}
+
+    /* Naviqasiya */
+    nav {
+      background:#1C86EE;
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      padding:12px 0;
+    }
+    nav a {color:white; font-weight:600; transition:0.3s;}
+    nav a:hover {opacity:0.8;}
+
+    /* Section başlıqları */
+    section {padding:60px 20px; max-width:1200px; margin:0 auto;}
+    section h2 {text-align:center; font-size:2rem; margin-bottom:40px; color:#E0FFFF;}
+
+    /* Ana səhifə slayder */
+    .slider {display:flex; overflow-x:auto; gap:20px; scroll-snap-type:x mandatory; padding-bottom:10px;}
+    .slider img {flex:0 0 auto; width:300px; scroll-snap-align:start; box-shadow:0 4px 10px rgba(0,0,0,0.2);}
+
+    /* Əl işləri grid */
+    .grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px;}
+    .card {background:#1E90FF; border-radius:15px; padding:15px; text-align:center; transition:0.3s;}
+    .card:hover {transform:translateY(-5px);}
+    .card h3 {color:#E0FFFF; margin-bottom:5px;}
+    .card p {font-size:0.9rem; color:#DDEEFF;}
+
+    /* Haqqında */
+    .about {text-align:center; line-height:1.6; color:#E0FFFF;}
+
+    /* Footer */
+    footer {text-align:center; padding:20px; background:#1C86EE; color:white;}
+    
+    /* Responsive */
+    @media(max-width:600px){
+      header h1 {font-size:2rem;}
+      section {padding:40px 15px;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>LopFairy</h1>
+    <p>Zəhra'nın Əl İşləri ilə Tanış Olun</p>
+  </header>
+
+  <!-- Naviqasiya -->
+  <nav>
+    <a href="#home">Ana Səhifə</a>
+    <a href="#works">Əl İşləri</a>
+    <a href="#about">Haqqında</a>
+  </nav>
+
+  <!-- Ana səhifə -->
+  <section id="home">
+    <h2>Son Əl İşləri</h2>
+    <div class="slider">
+      <img src="https://via.placeholder.com/300x300?text=İş+1" alt="İş 1">
+      <img src="https://via.placeholder.com/300x300?text=İş+2" alt="İş 2">
+      <img src="https://via.placeholder.com/300x300?text=İş+3" alt="İş 3">
+      <img src="https://via.placeholder.com/300x300?text=İş+4" alt="İş 4">
+    </div>
+  </section>
+
+  <!-- Əl işləri -->
+  <section id="works">
+    <h2>Əl İşləri</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/250x250?text=Horgu+1" alt="Horgu 1">
+        <h3>Horgu 1</h3>
+        <p>Rəngli və incə toxunuşlarla hazırlanmış horgu işidir.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/250x250?text=Horgu+2" alt="Horgu 2">
+        <h3>Horgu 2</h3>
+        <p>Qəşəng nümunə, hər detalına diqqət göstərilmişdir.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/250x250?text=Horgu+3" alt="Horgu 3">
+        <h3>Horgu 3</h3>
+        <p>Yumşaq ipliklərdən hazırlanmış, unikaldır.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Haqqında -->
+  <section id="about">
+    <h2>Haqqında</h2>
+    <p class="about">
+      Zəhra, əllərindən sevgi ilə çıxan incə əl işləri yaradır. <br>
+      Hörüklər, toxumalar və horgular onun yaradıcılığının əlamətləridir. <br>
+      LopFairy onun əl işlərini paylaşmaq və dünya ilə tanış etmək üçün qurulmuşdur.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 LopFairy - Bütün hüquqlar qorunur
+  </footer>
+
+</body>
+</html>
